@@ -1,0 +1,36 @@
+﻿<Window x:Class="CafeWpfApp.CookWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CafeWpfApp"
+        mc:Ignorable="d"
+        Title="Повар" Height="450" Width="600" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button Content="Выйти"
+                Name="LogOutBtn"
+                Click="LogOutBtn_Click"
+                Width="100"
+                HorizontalAlignment="Left"
+                Margin="10"/>
+
+        <DataGrid Name="OrdersDGrid"
+                  AutoGenerateColumns="False"
+                  ColumnWidth="*"
+                  CanUserAddRows="False"
+                  Grid.Row="1"
+                  Margin="10"
+                  IsReadOnly="True" 
+                  SelectionChanged="OrdersDGrid_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Создал" Binding="{Binding User.Login}"/>
+                <DataGridTextColumn Header="Время создания" Binding="{Binding DateCreate}"/>
+                <DataGridTextColumn Header="Статус заказа" Binding="{Binding StatusOrder.Name}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
