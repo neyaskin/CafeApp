@@ -93,7 +93,7 @@ namespace CafeWpfApp {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/CafeWpfApp;V1.0.0.0;component/waiterwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/CafeWpfApp;component/waiterwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\WaiterWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
