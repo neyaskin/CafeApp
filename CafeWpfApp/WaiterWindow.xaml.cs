@@ -46,7 +46,13 @@ namespace CafeWpfApp
 
         private void EditOrderBtn_Click(object sender, RoutedEventArgs e)
         {
+            Order selectedOrder = OrdersDGrid.SelectedItem as Order;
 
+            if (selectedOrder != null)
+            {
+                new EditOrderWindow(selectedOrder).Show();
+                this.Close();
+            }
         }
 
         private void DeleteOrderBtn_Click(object sender, RoutedEventArgs e)

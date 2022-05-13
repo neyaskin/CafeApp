@@ -167,3 +167,5 @@ Z:\CafeApp\CafeWpfApp\obj\Debug\net6.0-windows\CafeWpfApp.pdb
 Z:\CafeApp\CafeWpfApp\obj\Debug\net6.0-windows\CafeWpfApp.genruntimeconfig.cache
 Z:\CafeApp\CafeWpfApp\obj\Debug\net6.0-windows\AddOrderWindow.g.cs
 Z:\CafeApp\CafeWpfApp\obj\Debug\net6.0-windows\AddOrderWindow.baml
+Z:\CafeApp\CafeWpfApp\obj\Debug\net6.0-windows\EditOrderWindow.g.cs
+Z:\CafeApp\CafeWpfApp\obj\Debug\net6.0-windows\EditOrderWindow.baml
